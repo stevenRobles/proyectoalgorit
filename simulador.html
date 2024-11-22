@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Prueba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Prueba</h1>
+    </header>
+    
+    <main>
+        <div class="questions">
+            <form id="quizForm">
+                <!-- Pregunta 1 -->
+                <div class="question">
+                    <h2>1. ¿Cuál es el resultado de sumar 2 y 3?</h2>
+                    <input type="radio" name="question1" value="5"> 5<br>
+                    <input type="radio" name="question1" value="6"> 6<br>
+                    <input type="radio" name="question1" value="4"> 4<br>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="question">
+                    <h2>2. ¿Qué función utilizamos para encontrar el valor más alto en un arreglo de números?</h2>
+                    <input type="radio" name="question2" value="Math.max()"> Math.max()<br>
+                    <input type="radio" name="question2" value="Math.min()"> Math.min()<br>
+                    <input type="radio" name="question2" value="Array.max()"> Array.max()<br>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="question">
+                    <h2>3. ¿Cuál es el resultado de concatenar "Hola" y " Mundo"?</h2>
+                    <input type="radio" name="question3" value='"Hola Mundo"'> "Hola Mundo"<br>
+                    <input type="radio" name="question3" value='"HolaMundo"'> "HolaMundo"<br>
+                    <input type="radio" name="question3" value='"Hola Mundo " '> "Hola Mundo "<br>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="question">
+                    <h2>4. ¿Qué hace el método .push() en un arreglo?</h2>
+                    <input type="radio" name="question4" value="Añade un nuevo elemento al final del arreglo"> Añade un nuevo elemento al final del arreglo<br>
+                    <input type="radio" name="question4" value="Elimina el último elemento del arreglo"> Elimina el último elemento del arreglo<br>
+                    <input type="radio" name="question4" value="Añade un nuevo arreglo al final"> Añade un nuevo arreglo al final<br>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="question">
+                    <h2>5. ¿Cuál es el resultado de dividir 10 entre 2?</h2>
+                    <input type="radio" name="question5" value="5"> 5<br>
+                    <input type="radio" name="question5" value="2"> 2<br>
+                    <input type="radio" name="question5" value="3"> 3<br>
+                </div>
+
+                <button type="button" onclick="calificar()">Calificar Prueba</button>
+            </form>
+        </div>
+
+        <div id="result" class="result">
+            <h2>Resultado de la prueba:</h2>
+            <p id="score"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Simulador de Prueba de Programación</p>
+    </footer>
+
+    <script>
+        function calificar() {
+            let score = 0;
+
+            // Respuestas correctas
+            const correctAnswers = {
+                question1: "5",
+                question2: "Math.max()",
+                question3: '"Hola Mundo"',
+                question4: "Añade un nuevo elemento al final del arreglo",
+                question5: "5"
+            };
+
+            // Evaluar las respuestas
+            for (let question in correctAnswers) {
+                let selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            // Mostrar el resultado
+            document.getElementById("score").textContent = `Tu puntaje es: ${score} de 5`;
+        }
+    </script>
+</body>
+</html>

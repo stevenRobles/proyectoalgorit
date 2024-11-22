@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría 1: Números</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Números</h1>
+        <a href="index.html" class="button">Volver a Categorías</a>
+    </header>
+    <main>
+        <div class="exercise">
+            <h2>Imprimir números impares</h2>
+            <label for="numImpares">Ingrese un número:</label>
+            <input type="number" id="numImpares" placeholder="Número máximo">
+            <button onclick="imprimirImpares()">Ejecutar</button>
+            <pre id="result1"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Calcular la suma de los primeros 100 números</h2>
+            <button onclick="calcularSuma100()">Ejecutar</button>
+            <pre id="result2"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Suma de números pares hasta un número dado</h2>
+            <label for="numPares">Ingrese un número:</label>
+            <input type="number" id="numPares" placeholder="Número límite">
+            <button onclick="sumaPares()">Ejecutar</button>
+            <pre id="result3"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Números divisibles por 3 y 5</h2>
+            <label for="divisibles">Ingrese un número:</label>
+            <input type="number" id="divisibles" placeholder="Número máximo">
+            <button onclick="imprimirDivisibles()">Ejecutar</button>
+            <pre id="result4"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Generar la tabla de multiplicar</h2>
+            <label for="tablaNum">Ingrese un número:</label>
+            <input type="number" id="tablaNum" placeholder="Número para la tabla">
+            <button onclick="tablaMultiplicar()">Ejecutar</button>
+            <pre id="result5"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Serie de Fibonacci</h2>
+            <label for="fibonacci">Ingrese el número de términos:</label>
+            <input type="number" id="fibonacci" placeholder="Número de términos">
+            <button onclick="generarFibonacci()">Ejecutar</button>
+            <pre id="result6"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Multiplicación de n números</h2>
+            <label for="multiplicacion">Ingrese el número de términos:</label>
+            <input type="number" id="multiplicacion" placeholder="Número de términos">
+            <button onclick="multiplicarNumeros()">Ejecutar</button>
+            <pre id="result7"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Factorial de un número</h2>
+            <label for="factorial">Ingrese un número:</label>
+            <input type="number" id="factorial" placeholder="Número para calcular factorial">
+            <button onclick="calcularFactorial()">Ejecutar</button>
+            <pre id="result8"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Imprimir múltiplos de un número</h2>
+            <label for="multiplos">Ingrese un número:</label>
+            <input type="number" id="multiplos" placeholder="Número de múltiplos">
+            <button onclick="imprimirMultiplos()">Ejecutar</button>
+            <pre id="result9"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Divisores de un número</h2>
+            <label for="divisores">Ingrese un número:</label>
+            <input type="number" id="divisores" placeholder="Número para divisores">
+            <button onclick="calcularDivisores()">Ejecutar</button>
+            <pre id="result10"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Número perfecto</h2>
+            <label for="numeroPerfecto">Ingrese un número:</label>
+            <input type="number" id="numeroPerfecto" placeholder="Número para verificar">
+            <button onclick="esPerfecto()">Ejecutar</button>
+            <pre id="result11"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Números primos</h2>
+            <label for="primos">Ingrese un número:</label>
+            <input type="number" id="primos" placeholder="Número para encontrar primos">
+            <button onclick="encontrarPrimos()">Ejecutar</button>
+            <pre id="result12"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Invertir un número</h2>
+            <label for="invertirNum">Ingrese un número:</label>
+            <input type="number" id="invertirNum" placeholder="Número a invertir">
+            <button onclick="invertirNumero()">Ejecutar</button>
+            <pre id="result13"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Contar dígitos de un número</h2>
+            <label for="contarDigitos">Ingrese un número:</label>
+            <input type="number" id="contarDigitos" placeholder="Número para contar dígitos">
+            <button onclick="contarDigitos()">Ejecutar</button>
+            <pre id="result14"></pre>
+        </div>
+        <div class="exercise">
+            <h2>Dibujo de un triángulo de asteriscos</h2>
+            <label for="triangulo">Ingrese el número de filas:</label>
+            <input type="number" id="triangulo" placeholder="Número de filas del triángulo">
+            <button onclick="dibujarTriangulo()">Ejecutar</button>
+            <pre id="result15"></pre>
+        </div>
+    </main>
+    <script src="categoria1.js"></script>
+</body>
+</html>

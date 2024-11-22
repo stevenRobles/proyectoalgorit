@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría 3: Arreglos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Arreglos</h1>
+        <a href="index.html" class="button">Volver a Categorías</a>
+    </header>
+    <main>
+        <!-- Ejercicio 1: Arreglo de números aleatorios -->
+        <div class="exercise">
+            <h2>Dado un arreglo de 10 números generados aleatoriamente recorrer el arreglo y presentar cada número</h2>
+            <button onclick="mostrarArregloAleatorio()">Ejecutar</button>
+            <pre id="result1"></pre>
+        </div>
+        
+        <!-- Ejercicio 2: Promedio de calificaciones -->
+        <div class="exercise">
+            <h2>Promedio de calificaciones: Calcular el promedio de cinco calificaciones ingresadas por el usuario</h2>
+            <button onclick="promedioCalificaciones()">Ejecutar</button>
+            <pre id="result2"></pre>
+        </div>
+        
+        <!-- Ejercicio 3: Encontrar el máximo de una lista -->
+        <div class="exercise">
+            <h2>Encontrar el máximo de una lista de números: Encontrar el número más grande en una lista de números</h2>
+            <input type="text" id="maximoArreglo" placeholder="Ejemplo: 3, 5, 1, 8, 2">
+            <button onclick="maximoDeArreglo()">Ejecutar</button>
+            <pre id="result3"></pre>
+        </div>
+        
+        <!-- Ejercicio 4: Promedio de números mayores a un valor dado -->
+        <div class="exercise">
+            <h2>Encontrar el promedio de números mayores a un valor dado: Calcular el promedio de los números mayores a un valor límite en un arreglo</h2>
+            <input type="text" id="mayoresArreglo" placeholder="Ejemplo: 4, 6, 1, 8, 9">
+            <input type="number" id="limiteValor" placeholder="Valor límite">
+            <button onclick="promedioMayoresQueValor()">Ejecutar</button>
+            <pre id="result4"></pre>
+        </div>
+        
+        <!-- Ejercicio 5: Encontrar el mínimo de un arreglo -->
+        <div class="exercise">
+            <h2>Encontrar el mínimo de un arreglo de números: Encontrar el número más pequeño de un arreglo</h2>
+            <input type="text" id="minimoArreglo" placeholder="Ejemplo: 3, 5, 1, 8, 2">
+            <button onclick="minimoDeArreglo()">Ejecutar</button>
+            <pre id="result5"></pre>
+        </div>
+        
+        <!-- Ejercicio 6: Promedio de números pares -->
+        <div class="exercise">
+            <h2>Promedio de números pares de un arreglo: Calcular el promedio de los números pares en un arreglo de 10 números</h2>
+            <input type="text" id="paresArreglo" placeholder="Ejemplo: 2, 4, 6, 8, 10">
+            <button onclick="promedioPares()">Ejecutar</button>
+            <pre id="result6"></pre>
+        </div>
+        
+        <!-- Ejercicio 7: Sumar los dígitos de un número -->
+        <div class="exercise">
+            <h2>Arreglo suma dígitos: Almacenar los dígitos de un número en un arreglo y luego calcular la suma de los dígitos</h2>
+            <input type="number" id="numeroSuma" placeholder="Número">
+            <button onclick="sumaDigitos()">Ejecutar</button>
+            <pre id="result7"></pre>
+        </div>
+        
+        <!-- Ejercicio 8: Contar y sumar números positivos y negativos -->
+        <div class="exercise">
+            <h2>Contar y sumar números positivos y negativos: Contar y sumar cuántos de 10 números ingresados son positivos o negativos</h2>
+            <input type="text" id="positivosNegativosArreglo" placeholder="Ejemplo: -1, 2, 3, -4, 5">
+            <button onclick="contarPositivosNegativos()">Ejecutar</button>
+            <pre id="result8"></pre>
+        </div>
+        
+        <!-- Ejercicio 9: Crear un arreglo con los cuadrados -->
+        <div class="exercise">
+            <h2>Dado un arreglo de números crear otro arreglo con el cuadrado de cada elemento del primer arreglo</h2>
+            <input type="text" id="arregloCuadrado" placeholder="Ejemplo: 1, 2, 3, 4, 5">
+            <button onclick="arregloCuadrados()">Ejecutar</button>
+            <pre id="result9"></pre>
+        </div>
+        
+      
+        <div class="exercise">
+            <h2>Dado dos arreglos con la misma dimensión crear otro arreglo con la suma de cada elemento del arreglo1 con el arreglo2 en el orden de la misma posición</h2>
+            <input type="text" id="arreglo1" placeholder="Ejemplo: 1, 2, 3">
+            <input type="text" id="arreglo2" placeholder="Ejemplo: 4, 5, 6">
+            <button onclick="sumarArreglos()">Ejecutar</button>
+            <pre id="result10"></pre>
+        </div>
+    </main>
+    <script src="categoria3.js"></script>
+</body>
+</html>

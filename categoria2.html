@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría 2: Cadenas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Cadenas</h1>
+        <a href="index.html" class="button">Volver a Categorías</a>
+    </header>
+    <main>
+        <!-- Ejercicio 1: Ingresar nombre y apellido -->
+        <div class="exercise">
+            <h2>Ingresar un nombre y un apellido: Presentar apellido y nombre concatenados</h2>
+            <input type="text" id="nombreApellido" placeholder="Nombre y Apellido">
+            <button onclick="concatenarNombreApellido()">Ejecutar</button>
+            <pre id="result1"></pre>
+        </div>
+
+        <!-- Ejercicio 2: Comparar frases -->
+        <div class="exercise">
+            <h2>Comparar frases: Indicar si las frases son iguales o si la primera es mayor o menor que la segunda</h2>
+            <input type="text" id="frase1" placeholder="Frase 1">
+            <input type="text" id="frase2" placeholder="Frase 2">
+            <button onclick="compararFrases()">Ejecutar</button>
+            <pre id="result2"></pre>
+        </div>
+
+        <!-- Ejercicio 3: Ingresar palabra y separar -->
+        <div class="exercise">
+            <h2>Ingresar palabra: Crear otra palabra separando cada carácter con un espacio</h2>
+            <input type="text" id="palabra" placeholder="Palabra">
+            <button onclick="separarCaracteres()">Ejecutar</button>
+            <pre id="result3"></pre>
+        </div>
+
+        <!-- Ejercicio 4: Presentar código ASCII -->
+        <div class="exercise">
+            <h2>Dada una frase: Presentar cada carácter con su respectivo código ASCII</h2>
+            <input type="text" id="fraseASCII" placeholder="Frase">
+            <button onclick="mostrarASCII()">Ejecutar</button>
+            <pre id="result4"></pre>
+        </div>
+
+        <!-- Ejercicio 5: Invertir palabra -->
+        <div class="exercise">
+            <h2>Invertir una palabra: Invertir una frase ingresada</h2>
+            <input type="text" id="invertirPalabra" placeholder="Palabra o frase">
+            <button onclick="invertirPalabra()">Ejecutar</button>
+            <pre id="result5"></pre>
+        </div>
+
+        <!-- Ejercicio 6: Contar vocales -->
+        <div class="exercise">
+            <h2>Contar vocales en una palabra: Contar cuántas vocales tiene una palabra ingresada</h2>
+            <input type="text" id="vocalesPalabra" placeholder="Palabra">
+            <button onclick="contarVocales()">Ejecutar</button>
+            <pre id="result6"></pre>
+        </div>
+
+        <!-- Ejercicio 7: Contar letras del alfabeto -->
+        <div class="exercise">
+            <h2>Contar las letras del alfabeto en una palabra: Contar cuántas letras tiene una palabra ingresada</h2>
+            <input type="text" id="alfabetoPalabra" placeholder="Palabra">
+            <button onclick="contarLetrasAlfabeto()">Ejecutar</button>
+            <pre id="result7"></pre>
+        </div>
+
+        <!-- Ejercicio 8: Contar dígitos -->
+        <div class="exercise">
+            <h2>Contar dígitos en una frase: Contar cuántos dígitos tiene una frase ingresada</h2>
+            <input type="text" id="digitosFrase" placeholder="Frase">
+            <button onclick="contarDigitos()">Ejecutar</button>
+            <pre id="result8"></pre>
+        </div>
+
+        <!-- Ejercicio 9: Contar signos de puntuación -->
+        <div class="exercise">
+            <h2>Contar los signos de puntuación en una palabra: Contar cuántos signos de puntuación tiene una palabra</h2>
+            <input type="text" id="signosPalabra" placeholder="Palabra">
+            <button onclick="contarSignosPuntuacion()">Ejecutar</button>
+            <pre id="result9"></pre>
+        </div>
+    </main>
+    <script src="categoria2.js"></script>
+</body>
+</html>
